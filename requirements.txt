@@ -1,0 +1,7 @@
+openai
+langchain
+langchain-openai
+streamlit
+Brotli>=1.2.0
+langchain-ollama
+ddgs
