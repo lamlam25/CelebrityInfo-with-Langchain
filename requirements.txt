@@ -1,5 +1,6 @@
 openai
 langchain
+langchain-classic
 langchain-openai
 streamlit
 Brotli>=1.2.0
