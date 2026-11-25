@@ -1,6 +1,6 @@
 from langchain_ollama import ChatOllama
 import streamlit as st
-from langchain import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_classic.chains import LLMChain
 
 
@@ -16,4 +16,4 @@ chain = LLMChain(llm=llm, prompt=prompt,verbose=True)
 
 
 if input_text:
-    st.write(llm.invoke(prompt.format(input_text=input_text) ).content)
+    st.write(chain.run(input_text))
